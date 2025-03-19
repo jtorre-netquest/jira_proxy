@@ -24,7 +24,7 @@ def lambda_handler(event, context):
             "body": json.dumps({"error": "Invalid authentication"})
         }
 
-    jira_client = Jira(url="https://jira.dev.netquestapps.com", username=username, password=password)
+    jira_client = Jira(url="https://jira.netquest-apps.com", username=username, password=password)
 
     try:
         method = event.get("httpMethod", "GET")
